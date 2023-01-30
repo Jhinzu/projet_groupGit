@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
 </head>
 <body>
-    <main>
-        <section>
-            <h2></h2>
-            <img src="" alt="">
+    <main class="main_register">
+        <section class="main_register_left">
+            <h2 class="main_register_left__title">ASTUCES GITHUB</h2>
+            <img class="main_register_left__logo" src="img/github_logo.png" alt="">
         </section>
-        <section>
-
+        <section class="main_register_right">
+            <h2 class="main_register_right__title">INSCRIVEZ VOUS :</h2>
+            <form class="main_register_right_form" action="">
+                <div class="main_register_right_form_identity">
+                    <input class="main_register_right_form_identity__lastname" type="text" placeholder="Votre nom ...">
+                    <input class="main_register_right_form_identity__firstname" type="text" placeholder="Votre prénom ...">
+                </div>
+                <input class="main_register_right_form__mail" type="text" placeholder="Votre adresse mail ...">
+                <div class="main_register_right_form_password">
+                    <input class="main_register_right_form_password__first" type="text" placeholder="Votre mot de passe ...">
+                    <input class="main_register_right_form_password__confirm" type="text" placeholder="Confirmer votre mot de passe ...">
+                </div>
+                <button class="main_register_right_form__send">S'INSCRIRE</button>
+                <p class="main_register_right_form__connexion">Vous êtes déjà inscrit ? <a href="">Se connecter</a></p>
+            </form>
         </section>
     </main>
 </body>
