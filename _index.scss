@@ -1,4 +1,62 @@
-body
-{
-    color: red;
+.titre {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.sous-titre {
+    color: green;
+    margin: 20px;
+}
+
+.container-local {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: green;
+    width: 60%;
+    margin: 20px;
+
+}
+
+.local {
+    width: 95%;
+}
+.p{
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    
+    
+
+    
+    
+}
+
+.version-local {
+    display: flex;
+    flex-direction: column;
+}
+
+.commits {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #dfe0e0;
+    width: 60%;
+    margin: 30px;
+}
+
+.commits-trait {
+    width: 95%;
+}
+
+.depot {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: green;
+    width: 60%;
+    margin: 20px;
+}
+
+.separation-depot {
+    width: 95%;
+
 }
