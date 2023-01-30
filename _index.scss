@@ -67,3 +67,73 @@
     
     @extend %bulleGit;
 }
+/*box lift*/
+
+.titre {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.sous-titre {
+    color: green;
+    margin: 20px;
+}
+.version-local{
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+    
+
+}
+.local{
+    width: 95%;
+    margin: 20px;
+}
+.h2{
+margin: 20px;
+}
+.p{
+display: flex;
+flex-flow: column;
+
+}
+.commits{
+    border: 1px solid green;
+    background-color:#dfe0e0;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px;
+    
+}
+.commits-trait{
+    width: 95%;
+}
+.p-commits{
+margin: 20px;
+}
+.commitsh2{
+margin: 20px;
+}
+.depot{
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 10px;
+    width: 70%; 
+    margin: 20px;
+}
+.separation-depot{
+    width: 95%;
+}
+.separation-depot{
+
+}
+.depoth2{
+margin: 20px;
+}
+.p-depot{
+    margin: 20px;
+}
