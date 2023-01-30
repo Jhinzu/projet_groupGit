@@ -27,7 +27,7 @@
 .bulle1Right {
   background-color: #dfe0e0;
   border-radius: 15px;
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-flow: column;
   padding: 1%;
@@ -36,7 +36,7 @@
 .bulle2Right {
   background-color: #dfe0e0;
   border-radius: 15px;
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-flow: column;
   padding: 1%;
@@ -45,8 +45,59 @@
 .bulle3Right {
   background-color: #dfe0e0;
   border-radius: 15px;
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-flow: column;
   padding: 1%;
+}
+
+.bulle4Right {
+  background-color: black;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 1%;
+}
+.bulle4Right h2 {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+.bulle4Right .ligne {
+  display: flex;
+  justify-content: center;
+  border: 2px white solid;
+}
+.bulle4Right .containerText {
+  display: flex;
+  flex-flow: row;
+}
+.bulle4Right .containerText .containerTextL {
+  display: flex;
+  flex-flow: column;
+  font-weight: bold;
+  width: 40%;
+  color: #2eb052;
+}
+
+.boxRight {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+}
+
+.containerBottom {
+  display: flex;
+  flex-flow: row;
+}
+.containerBottom .bottomRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomLeft {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
