@@ -16,10 +16,15 @@ img {
 }
 
 main {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 80vw;
-  margin: auto auto;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
 }
@@ -50,6 +55,7 @@ main #left h1 {
 main #left #logo {
   width: 100%;
   text-align: center;
+  padding: 10px;
 }
 main #left #logo img {
   width: 40%;
@@ -67,24 +73,24 @@ main #right {
   justify-content: center;
   align-items: center;
   background-color: white;
-  padding-bottom: 30px;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 865px) {
   main #right {
-    width: 50%;
+    width: 70%;
   }
 }
 main form {
-  width: 90%;
+  width: 80%;
+  padding-bottom: 30px;
   gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "nom" "prenom" "mail" "mdp" "mdp2" "btn";
   display: grid;
 }
-@media screen and (min-width: 545px) {
+@media screen and (min-width: 645px) {
   main form {
-    width: 80%;
+    width: 60%;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;

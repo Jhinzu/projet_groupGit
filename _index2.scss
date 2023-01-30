@@ -13,10 +13,15 @@ img {
 
 
     main {
+    position: absolute;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 80vw;
-    margin: auto auto;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @media screen and (min-width: 900px) {
         flex-direction: row;
@@ -46,6 +51,7 @@ img {
         #logo {
             width: 100%;
             text-align: center;
+            padding: 10px;
             img {
             width: 40%;
             @media screen and (min-width: 900px) {
@@ -60,18 +66,18 @@ img {
     #right{ 
         width: 100%;
         height: 100%;
-        @media screen and (min-width: 900px) {
-            width: 50%;
+        @media screen and (min-width: 865px) {
+            width: 70%;
         }
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: white;
-        padding-bottom: 30px;
     }
     form {
-        width: 90%;
+        width: 80%;
+        padding-bottom: 30px;
         gap: 10px;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -82,8 +88,8 @@ img {
             "mdp" 
             "mdp2"
             "btn";
-        @media screen and (min-width: 545px) {
-            width: 80%;
+        @media screen and (min-width: 645px) {
+            width: 60%;
             
             gap: 10px;
             grid-template-columns: 1fr 1fr;
