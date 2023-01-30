@@ -1,3 +1,16 @@
+
+.containerAll
+{
+    display: flex;
+    flex-flow: row;
+    padding: 40px;
+    @media screen and (max-width: 992px)
+    {
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+
 // partie right
 %bulleGit
 {
@@ -6,6 +19,10 @@
         font-size: 3em;
         margin: 0;
         text-align: center;
+        @media screen and (max-width: 768px)
+        {
+            font-size: 2em;
+        }
     }
     .ligne
     {
@@ -17,6 +34,7 @@
     {
         display: flex;
         flex-flow: row;
+        padding: 2%;
         .containerTextL
         {
             display: flex;
@@ -28,7 +46,8 @@
         {
             display: flex;
             flex-flow: column;
-            width: 40%;
+            width: 70%;
+            text-align: center;
         }
     }
 }
@@ -75,13 +94,17 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    padding: 1%;    
+    padding: 1%; 
     h2
     {
         font-size: 3em;
         margin: 0;
         text-align: center;
         color: white;
+        @media screen and (max-width: 768px)
+        {
+            font-size: 2em;
+        }
     }
     .ligne
     {
@@ -93,6 +116,7 @@
     {
         display: flex;
         flex-flow: row;
+        padding: 2%;
         .containerTextL
         {
             display: flex;
@@ -107,6 +131,8 @@
 {
     display: flex;
     flex-flow: column;
+    justify-content: space-around;
+    width: 100%;
     gap: 50px;
 }
 .containerBottom
@@ -118,28 +144,49 @@
         width: 50%;
         display: flex;
         justify-content: center ;
+        align-items: center;
+        @media screen and (max-width: 768px)
+        {
+            display: none;
+        }
+        img
+        {
+            width: 330px;
+            height: 300px;
+        }
+
     }
 }
 .bottomLeft
 {
     width: 50%;
+    @media screen and (max-width: 768px)
+        {
+            width: 100%;
+        }
 }
 /*box lift*/
+
+.box-left
+{
+    width: 100%;
+}
 
 .titre {
     font-size: 40px;
     margin: 20px;
+    font-size: 3.5em;
 }
 
 .sous-titre {
     color: green;
     margin: 20px;
+    font-size: 2em;
 }
 .version-local{
     border: 1px solid green;
     background-color: green;
     border-radius: 10px;
-    width: 70%;
     margin: 20px;
     display: flex;
     flex-flow: column;
@@ -162,7 +209,6 @@ flex-flow: column;
     border: 1px solid green;
     background-color:#dfe0e0;
     border-radius: 10px;
-    width: 70%;
     margin: 20px;
     
 }
@@ -179,7 +225,6 @@ margin: 20px;
     border: 1px solid green;
     background-color: green;
     border-radius: 10px;
-    width: 70%; 
     margin: 20px;
 }
 .separation-depot{

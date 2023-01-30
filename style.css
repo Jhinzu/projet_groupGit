@@ -1,7 +1,24 @@
+.containerAll {
+  display: flex;
+  flex-flow: row;
+  padding: 40px;
+}
+@media screen and (max-width: 992px) {
+  .containerAll {
+    display: flex;
+    flex-flow: wrap;
+  }
+}
+
 .bulle3Right h2, .bulle2Right h2, .bulle1Right h2 {
   font-size: 3em;
   margin: 0;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .bulle3Right h2, .bulle2Right h2, .bulle1Right h2 {
+    font-size: 2em;
+  }
 }
 .bulle3Right .ligne, .bulle2Right .ligne, .bulle1Right .ligne {
   display: flex;
@@ -11,6 +28,7 @@
 .bulle3Right .containerText, .bulle2Right .containerText, .bulle1Right .containerText {
   display: flex;
   flex-flow: row;
+  padding: 2%;
 }
 .bulle3Right .containerText .containerTextL, .bulle2Right .containerText .containerTextL, .bulle1Right .containerText .containerTextL {
   display: flex;
@@ -21,7 +39,8 @@
 .bulle3Right .containerText .containerTextR, .bulle2Right .containerText .containerTextR, .bulle1Right .containerText .containerTextR {
   display: flex;
   flex-flow: column;
-  width: 40%;
+  width: 70%;
+  text-align: center;
 }
 
 .bulle1Right {
@@ -65,6 +84,11 @@
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .bulle4Right h2 {
+    font-size: 2em;
+  }
+}
 .bulle4Right .ligne {
   display: flex;
   justify-content: center;
@@ -73,6 +97,7 @@
 .bulle4Right .containerText {
   display: flex;
   flex-flow: row;
+  padding: 2%;
 }
 .bulle4Right .containerText .containerTextL {
   display: flex;
@@ -85,6 +110,8 @@
 .boxRight {
   display: flex;
   flex-flow: column;
+  justify-content: space-around;
+  width: 100%;
   gap: 50px;
 }
 
@@ -96,28 +123,48 @@
   width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .containerBottom .bottomRight {
+    display: none;
+  }
+}
+.containerBottom .bottomRight img {
+  width: 330px;
+  height: 300px;
 }
 
 .bottomLeft {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .bottomLeft {
+    width: 100%;
+  }
+}
 
 /*box lift*/
+.box-left {
+  width: 100%;
+}
+
 .titre {
   font-size: 40px;
   margin: 20px;
+  font-size: 3.5em;
 }
 
 .sous-titre {
   color: green;
   margin: 20px;
+  font-size: 2em;
 }
 
 .version-local {
   border: 1px solid green;
   background-color: green;
   border-radius: 10px;
-  width: 70%;
   margin: 20px;
   display: flex;
   flex-flow: column;
@@ -141,7 +188,6 @@
   border: 1px solid green;
   background-color: #dfe0e0;
   border-radius: 10px;
-  width: 70%;
   margin: 20px;
 }
 
@@ -161,7 +207,6 @@
   border: 1px solid green;
   background-color: green;
   border-radius: 10px;
-  width: 70%;
   margin: 20px;
 }
 
