@@ -12,11 +12,12 @@ body {
   background-color: white;
   border-radius: 30px;
   width: 80vw;
-  margin: 20px auto;
+  margin: 100px auto;
 }
 @media screen and (min-width: 768px) {
   .main_register {
     flex-direction: row;
+    padding: 50px 0;
   }
 }
 .main_register_left {
