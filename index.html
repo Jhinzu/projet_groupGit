@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Page 1</title>
 </head>
+
 <body>
-    
+    <div class="containerAll">
+        <!--boxe left-->
+        <div class="box-left">
+            <div class="contenair-titre">
+                <h1 class="titre">GitHub Cheat Sheet</h1>
+                <h2 class="sous-titre">Version de son travail</h2>
+            </div>
+            <div class="container-local">
+                <div class="version-local">
+                    <h1>version en local</h1>
+                    <hr class="local">
+
+                    <h2 class="h2">git Init</h2>
+                    <p class="p">initialiser le depôt (se mettre sur le bon dossier), mieux à faire depuis Github.com</p>
+                    <h2 class="h2">git add .</h2>
+                    <p class="p">ajoute toutes les modifications (le . symbolise tout)</p>
+                    <h2 class="h2"> git commit .m "explication"</h2>
+                    <p class="p"> créer un nouveau commit. <strong>git add</strong> pousse les fichiers en zone d 'index,
+                        <strong>git
+                            commit</strong>les sauvegarder
+                        réellement dans un nouveau commit
+                    </p>
+                </div>
+            </div>
+            <div class="commits">
+                <h1>Gérer les commits</h1>
+                <hr class="commits-trait">
+                <h2 class="commitsh2">git log</h2>
+                <p class="p-commits">liste des commits</p>
+                <h2 class="commitsh2">git log-n2</h2>
+                <p class="p-commits">affiche les deux derniers commits</p>
+                <h2 class="commitsh2">git show sha-1</h2>
+                <p class="p-commits">voir commit spécifique (cliquer molette souris pour coller)</p>
+                <h2 class="commitsh2">git checkout sha-1</h2>
+                <p class="p-commits">remettre la version du sha-1</p>
+                <h2 class="commitsh2">checkout main</h2>
+                <p class="p-commits">remettre la version la plus récente</p>
+            </div>
+            <div class="depot">
+                <h1>Version sur un dépôt distant</h1>
+                <hr class="separation-depot">
+                <h2 class="depoth2"> git clon lien-github.com</h2>
+                <p class="p-depot">récupérer travail depuis dépôt distant</p>
+                <h2 class="depoth2">git push-u origin main</h2>
+                <p class="p-depot">pousse les modifications vers serveur</p>
+                <h2 class="depoth2">git push-f origin main</h2>
+                <p class="p-depot">pousse de force des modifications (à manipuler avec précaution)</p>
+
+            </div>
+        </div>
+
+        <!-- box right -->
+        <div class="boxRight">
+            <section class="bulle1Right">
+                <h2>Naviguer dans git bash</h2>
+                <div class="ligne"></div>
+                <div class="containerText">
+                    <div class="containerTextL">
+                        <p>pwd</p>
+                        <p>mkdir "dossier"</p>
+                        <p>pwd touch fichier.txt</p>
+                        <p>ls</p>
+                        <p>ls-la</p>
+                        <p>cd</p>
+                        <p>cd..</p>
+                    </div>
+
+                    <div class="containerTextR">
+                        <p>savoir dans quel dossier je suis</p>
+                        <p>crée un dossier (make Directory)</p>
+                        <p>crée un fichier</p>
+                        <p>liste le dossier courant</p>
+                        <p>liste tout plus précisément que ls</p>
+                        <p>aller dans le dossier (change Directory</p>
+                        <p>remonter d'un dossier</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bulle2Right">
+                <h2>Initialisation de Git</h2>
+                <div class="ligne"></div>
+                <div class="containerText">
+                    <div class="containerTextL">
+                        <p>git config --global user.name</p>
+                        <p>git config --global user.email</p>
+                        <p>git config --global --list</p>
+                    </div>
+
+                    <div class="containerTextR">
+                        <p>"Mon Nom"</p>
+                        <p>mon@mail.com</p>
+                        <p>Affiche nom et mail</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bulle3Right">
+                <h2>Autres commandes</h2>
+                <div class="ligne"></div>
+                <div class="containerText">
+                    <div class="containerTextL">
+                        <p>git status</p>
+                        <p>git diff</p>
+                    </div>
+
+                    <div class="containerTextR">
+                        <p>état du fichier</p>
+                        <p>affiche les modifs avant commit</p>
+                    </div>
+                </div>
+            </section>
+            <div class="containerBottom">
+                <div class="bottomLeft">
+                    <section class="bulle4Right">
+                        <h2>Commit son projet sur Github</h2>
+                        <div class="ligne"></div>
+                        <div class="containerText">
+                            <div class="containerTextL">
+                                <p>git add .</p>
+                                <p>git commit -m "message"</p>
+                                <p>git push -u origin main</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="bottomRight">
+                    <img src="Images/github_logo.png" alt="Avatar_github">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+</html>
+</body>
+
 </html>
