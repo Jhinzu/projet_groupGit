@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .containerAll {
   display: flex;
   flex-flow: row;
@@ -220,4 +221,123 @@
 
 .p-depot {
   margin: 20px;
+}
+
+.body_ben {
+  font-family: jost;
+  background-color: #dfe0e0;
+}
+
+.main_register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  width: 80vw;
+  margin: 100px auto;
+}
+@media screen and (min-width: 768px) {
+  .main_register {
+    flex-direction: row;
+    padding: 50px 0;
+  }
+}
+.main_register_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 20px;
+}
+@media screen and (min-width: 768px) {
+  .main_register_left {
+    margin: 20px;
+    width: 40vw;
+  }
+}
+.main_register_left__title {
+  font-size: 20px;
+}
+.main_register_left__logo {
+  width: 200px;
+}
+.main_register_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  margin: 10px;
+}
+@media screen and (min-width: 768px) {
+  .main_register_right {
+    width: 60vw;
+  }
+}
+.main_register_right__title {
+  font-size: 20px;
+}
+.main_register_right_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main_register_right_form_identity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main_register_right_form_identity__lastname {
+  margin: 5px;
+  padding: 8px 0px;
+  border: solid 1px #212121;
+  text-indent: 8px;
+}
+.main_register_right_form_identity__firstname {
+  margin: 5px;
+  padding: 8px 0px;
+  border: solid 1px #212121;
+  text-indent: 8px;
+}
+.main_register_right_form__mail {
+  margin: 5px;
+  padding: 8px;
+  border: solid 1px #212121;
+}
+.main_register_right_form_password {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main_register_right_form_password__first {
+  margin: 5px;
+  padding: 8px 0px;
+  border: solid 1px #212121;
+  text-indent: 8px;
+}
+.main_register_right_form_password__confirm {
+  margin: 5px;
+  padding: 8px 0px;
+  border: solid 1px #212121;
+  text-indent: 8px;
+}
+.main_register_right_form__send {
+  margin: 5px;
+  border: none;
+  background-color: #212121;
+  color: white;
+  padding: 10px 0;
+  transition: all 0.2s ease;
+}
+.main_register_right_form__send:hover {
+  background-color: #2ea44e;
+  cursor: pointer;
+}
+.main_register_right_form__connexion {
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
