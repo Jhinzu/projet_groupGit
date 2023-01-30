@@ -1,4 +1,69 @@
-body
+%bulleGit
 {
-    color: red;
+    h2
+    {
+        font-size: 3em;
+        margin: 0;
+        text-align: center;
+    }
+    .ligne
+    {
+        display: flex;
+        justify-content: center;
+        border: 2px white solid;
+    }
+    .containerText
+    {
+        display: flex;
+        flex-flow: row;
+        .containerTextL
+        {
+            display: flex;
+            flex-flow: column;
+            font-weight: bold;
+            width: 40%;
+        }
+        .containerTextR
+        {
+            display: flex;
+            flex-flow: column;
+            width: 40%;
+        }
+    }
+}
+
+.bulle1Right
+{
+    background-color: #dfe0e0;
+    border-radius: 15px;
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    padding: 1%;
+
+    @extend %bulleGit ;
+}
+
+.bulle2Right
+{
+    background-color: #dfe0e0;
+    border-radius: 15px;
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    padding: 1%;
+    
+    @extend %bulleGit;
+}
+
+.bulle3Right
+{
+    background-color: #dfe0e0;
+    border-radius: 15px;
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    padding: 1%;
+    
+    @extend %bulleGit;
 }

@@ -1,3 +1,52 @@
-body {
-  color: red;
+.bulle3Right h2, .bulle2Right h2, .bulle1Right h2 {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+}
+.bulle3Right .ligne, .bulle2Right .ligne, .bulle1Right .ligne {
+  display: flex;
+  justify-content: center;
+  border: 2px white solid;
+}
+.bulle3Right .containerText, .bulle2Right .containerText, .bulle1Right .containerText {
+  display: flex;
+  flex-flow: row;
+}
+.bulle3Right .containerText .containerTextL, .bulle2Right .containerText .containerTextL, .bulle1Right .containerText .containerTextL {
+  display: flex;
+  flex-flow: column;
+  font-weight: bold;
+  width: 40%;
+}
+.bulle3Right .containerText .containerTextR, .bulle2Right .containerText .containerTextR, .bulle1Right .containerText .containerTextR {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+}
+
+.bulle1Right {
+  background-color: #dfe0e0;
+  border-radius: 15px;
+  width: 45%;
+  display: flex;
+  flex-flow: column;
+  padding: 1%;
+}
+
+.bulle2Right {
+  background-color: #dfe0e0;
+  border-radius: 15px;
+  width: 45%;
+  display: flex;
+  flex-flow: column;
+  padding: 1%;
+}
+
+.bulle3Right {
+  background-color: #dfe0e0;
+  border-radius: 15px;
+  width: 45%;
+  display: flex;
+  flex-flow: column;
+  padding: 1%;
 }/*# sourceMappingURL=style.css.map */
