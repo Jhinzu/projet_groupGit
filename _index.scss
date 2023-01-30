@@ -1,62 +1,69 @@
-.titre {
-    font-size: 40px;
-    margin: 20px;
+%bulleGit
+{
+    h2
+    {
+        font-size: 3em;
+        margin: 0;
+        text-align: center;
+    }
+    .ligne
+    {
+        display: flex;
+        justify-content: center;
+        border: 2px white solid;
+    }
+    .containerText
+    {
+        display: flex;
+        flex-flow: row;
+        .containerTextL
+        {
+            display: flex;
+            flex-flow: column;
+            font-weight: bold;
+            width: 40%;
+        }
+        .containerTextR
+        {
+            display: flex;
+            flex-flow: column;
+            width: 40%;
+        }
+    }
 }
 
-.sous-titre {
-    color: green;
-    margin: 20px;
-}
-
-.container-local {
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: green;
-    width: 60%;
-    margin: 20px;
-
-}
-
-.local {
-    width: 95%;
-}
-.p{
-    display: flex;
-    justify-content: right;
-    margin: 0;
-    
-    
-
-    
-    
-}
-
-.version-local {
-    display: flex;
-    flex-direction: column;
-}
-
-.commits {
-    border: 1px solid black;
-    border-radius: 10px;
+.bulle1Right
+{
     background-color: #dfe0e0;
-    width: 60%;
-    margin: 30px;
+    border-radius: 15px;
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    padding: 1%;
+
+    @extend %bulleGit ;
 }
 
-.commits-trait {
-    width: 95%;
+.bulle2Right
+{
+    background-color: #dfe0e0;
+    border-radius: 15px;
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    padding: 1%;
+    
+    @extend %bulleGit;
 }
 
-.depot {
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: green;
-    width: 60%;
-    margin: 20px;
-}
-
-.separation-depot {
-    width: 95%;
-
+.bulle3Right
+{
+    background-color: #dfe0e0;
+    border-radius: 15px;
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    padding: 1%;
+    
+    @extend %bulleGit;
 }
